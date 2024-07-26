@@ -7,8 +7,35 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <!-- YOUR CODE HERE -->
-  
+  <div id="search">
+  <input type="text" id="city" value="" placeholder=""  />
+  <input class="button" type="submit" value="Search" onclick="getWeather()" />
+</div>
+<div id="weatherInformation">
+<div id="time">
+  <h1 id="cityName"></h1>
+  <h2 id="cityTemp"></h2>
+</div>
+<table>
+  <tr>
+      <td>Country</td>
+      <td id="country"></td>
+  </tr>
+  <tr>
+      <td>Timezone</td>
+      <td id="timezone"></td>
+  </tr>
+  <tr>
+      <td>Population</td>
+      <td id="population"></td>
+  </tr>
+  <tr>
+      <td>Tomorrow's Forecast</td>
+      <td id="temperature"></td>
+  </tr>
+</table>
+</div>
+</body>
   <script src="./app.js"></script>
 </body>
 </html>
